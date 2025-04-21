@@ -106,52 +106,68 @@
                 margin: 20px 0;
             }
         }
-
         .services-title {
-            color: white;
-            font-size: 32px;
-            margin: 20px 0 30px 0;
-        }
-        
+    color: rgb(20, 19, 19);
+    font-size: 25px;
+    margin: 20px 0 30px 0;
+    }
+
+    .services-grid {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 50px;
+        gap: 20px;
+    }
+
+    .service-card {
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 30%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .service-image {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .service-content {
+        padding: 10px;
+    }
+
+    .service-content h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .service-content p {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+    }
+
+    /* Mobile responsive styles */
+    @media screen and (max-width: 768px) {
         .services-grid {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 50px;
-            gap: 20px;
+            flex-direction: column;
+            margin: 20px 15px;
         }
         
         .service-card {
-            background-color: white;
-            border-radius: 5px;
-            overflow: hidden;
-            width: 30%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+            margin-bottom: 20px;
         }
         
         .service-image {
-            height: 150px;
-            overflow: hidden;
+            height: 180px;
         }
-        
-        .service-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .service-content {
-            padding: 10px;
-        }
-        
-        .service-content h3 {
-            margin: 0;
-            font-size: 16px;
-        }
-        
-        .service-content p {
-            margin: 5px 0 0 0;
-            font-size: 14px;
-        }
+    }
         
         .showcase {
             display: flex;
@@ -168,23 +184,37 @@
         }
         
         .why-choose-us {
-            padding: 20px 50px;
-            display: flex;
+        padding: 20px 50px;
+        display: flex;
         }
-        
+
         .why-choose-us-content {
             width: 50%;
             padding-left: 20px;
         }
-        
+
         .why-choose-us h2 {
             color: #0033cc;
             margin-top: 0;
         }
-        
+
         .why-choose-us p {
             font-size: 14px;
             line-height: 1.5;
+        }
+
+        /* Mobile responsive styles */
+        @media screen and (max-width: 768px) {
+            .why-choose-us {
+                flex-direction: column;
+                padding: 20px 15px;
+            }
+            
+            .why-choose-us-content {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 15px;
+            }
         }
 
        .logo {
@@ -622,7 +652,7 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-menu">
-                <li><a href="best.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="contact.html">SERVICES</a></li>
                 <!-- <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">CONTACT</a></li> -->
@@ -663,7 +693,7 @@
 
     <section class="container">
         <div class="">
-            <h1>Phibest</h1>
+            <!-- <p style="font-size: 32px;">Phibest</p> -->
             <h2 class="services-title">Services we are offering</h2>
         </div>
         
@@ -744,6 +774,9 @@
                 <div class="service-detail-image">
                     <img src="images/venti-views-1cqIcrWFQBI-unsplash.jpg" alt="Ship stairs">
                 </div>
+                <div class="service-detail-image">
+                    <img src="images/jacob-meissner-oGafvInnHlY-unsplash.jpg" alt="Ship stairs">
+                </div>
             </div>
         </div>
 
@@ -756,6 +789,9 @@
                 </div>
                 <div class="service-detail-image">
                     <img src="images/pexels-sevenstormphotography-439416.jpg" alt="Construction equipment">
+                </div>
+                <div class="service-detail-image">
+                    <img src="images/michael-up_c1IQN33Q-unsplash.jpg" alt="Construction equipment">
                 </div>
             </div>
         </div>
@@ -770,6 +806,9 @@
                 <div class="service-detail-image">
                     <img src="images/metal-8327760.jpg" alt="Metal fabrication">
                 </div>
+                <div class="service-detail-image">
+                    <img src="images/metal-8327761.jpg" alt="Metal fabrication">
+                </div>
             </div>
         </div>
 
@@ -782,6 +821,9 @@
                 </div>
                 <div class="service-detail-image">
                     <img src="images/venti-views-1cqIcrWFQBI-unsplash.jpg" alt="Cargo transport">
+                </div>
+                <div class="service-detail-image">
+                    <img src="images/jacob-meissner-oGafvInnHlY-unsplash.jpg" alt="Cargo transport">
                 </div>
             </div>
         </div>
@@ -820,6 +862,9 @@
                 </div>
                 <div class="other-service-image">
                     <img src="images/solar-8499901.jpg" alt="Solar panels on roof">
+                </div>
+                <div class="other-service-image">
+                    <img src="images/pexels-cristian-rojas-8853502.jpg" alt="Solar panels on roof">
                 </div>
             </div>
         </div>
